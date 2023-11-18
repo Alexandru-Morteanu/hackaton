@@ -7,15 +7,18 @@ export default function Home() {
         className=" flex justify-center content-center text-center font-bold text-gray-200 text-8xl p-5"
         style={{ fontFamily: "DM Serif Display, serif" }}
       >
-        Recycle with
+        Go <span className="text-green-600"> Green </span> with
       </h1>
       <h2>
-        <span className="text-green-100 flex justify-center content-center font-bold text-8xl p-5">
-          PinBin<span className="text-red-700 ">!</span>
+        <span
+          style={{ fontFamily: "DM Serif Display, serif" }}
+          className="text-gray-100 flex justify-center content-center font-bold text-8xl p-5"
+        >
+          PinBin
         </span>
       </h2>
 
-      <p className="text-center flex justify-center content-center font-bold text-gray-200 text-xl animate-pulse">
+      <p className="text-center flex justify-center content-center font-bold text-gray-200 text-xl">
         Quia est nostrum et aliquid architecto omnis earum quis.est beatae
         <br />
         etvel quam oditAtque officiis ab distinctio dolores labore.

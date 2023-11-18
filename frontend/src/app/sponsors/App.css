@@ -21,13 +21,28 @@
 
 /* Optional: Add styling to make it visually appealing */
 .carousel-item:nth-child(1) {
-  background-color: #ffcccb;
+  background-color: black;
+  opacity: 60%;
 }
 .carousel-item:nth-child(2) {
-  background-color: #ffb6c1;
+  background-color: black;
+  opacity: 60%;
 }
 .carousel-item:nth-child(3) {
-  background-color: #ffa07a;
+  background-color: black;
+  opacity: 60%;
+}
+.carousel-item:nth-child(4) {
+  background-color: black;
+  opacity: 60%;
+}
+.carousel-item:nth-child(5) {
+  background-color: black;
+  opacity: 60%;
+}
+.carousel-item:nth-child(6) {
+  background-color: black;
+  opacity: 60%;
 }
 
 .sponsor:nth-child(2n) {
