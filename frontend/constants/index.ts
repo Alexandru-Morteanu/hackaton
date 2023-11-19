@@ -6,3 +6,9 @@ export const STATES = {
   CAMERA: "camera",
   MAP: "map",
 };
+export const PUBLIC_GOOGLE_MAP_KEY = "AIzaSyDn8a5KSUALiARMAOQWEPq13XK1jpat5-E";
+export type Data = {
+  x: number;
+  y: number;
+  imgName: string;
+};

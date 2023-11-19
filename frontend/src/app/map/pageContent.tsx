@@ -4,10 +4,13 @@ import Camera from "../components/camera";
 import MapContainer from "../components/map";
 import { STATES } from "../../../constants";
 import RootLayout from "../layout";
+import MapContainer2 from "../components/map";
 
 export default function PageContent() {
   const [currentState, setCurrentState] = useState<string>(STATES.BUTTON);
+  const [imgName, setImgName] = useState<string>("");
 
+  const [image, setImage] = useState<string | null>(null);
   const switchState = (state: string) => {
     setCurrentState(state);
   };
@@ -19,8 +22,8 @@ export default function PageContent() {
           case STATES.BUTTON:
             return (
               <>
-                <p className="m-10 text-2xl font-bol">
-                  Press on the button below to send an image
+                <p className="m-10 text-2xl font-bold text-center">
+                  Press on the button below to send an image of the trash
                 </p>
                 <button
                   onClick={() => {
@@ -33,9 +36,16 @@ export default function PageContent() {
               </>
             );
           case STATES.CAMERA:
-            return <Camera switchState={switchState} />;
+            return (
+              <Camera
+                setImgName={setImgName}
+                image={image}
+                setImage={setImage}
+                switchState={switchState}
+              />
+            );
           case STATES.MAP:
-            return <MapContainer />;
+            return <MapContainer2 imgName={imgName} image={image} />;
           default:
             return null;
         }

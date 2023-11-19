@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
       </h2>
       <p className="mb-4 text-gray-300">
         For any questions, please contact us at{" "}
-        <span className="underline text-green-200">contact@pinbin.com</span>.
+        <span className="underline text-green-200">contact@inorog.org</span>.
       </p>
     </div>
   );

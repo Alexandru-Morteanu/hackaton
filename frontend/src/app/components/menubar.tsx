@@ -5,7 +5,7 @@ import { useState } from "react";
 const MenuBar = () => {
   const [openNav, setOpenNav] = useState<boolean>(false);
   return (
-    <div className="fixed flex text-white w-full bg-black bg-opacity-80 z-50 backdrop-blur-lg font-serif">
+    <div className="fixed flex text-white w-full bg-black bg-opacity-40 z-50 backdrop-blur-lg font-serif">
       <div className="flex justify-between w-full">
         <Link href="/">
           <h1 className="text-white items-center font-bold text-3xl p-4">
@@ -24,13 +24,14 @@ const MenuBar = () => {
           </div>
         </button>
         <div
-          className={`sm:hidden flex flex-col w-3/8 h-screen bg-black bg-opacity-40 mt-16 absolute right-0 transform transition-transform duration-500 ${
+          className={`sm:hidden flex flex-col w-3/8 h-screen bg-black bg-opacity-[40%] mt-16 absolute right-0 transform transition-transform duration-500 ${
             openNav ? "translate-x-0" : "translate-x-full"
           }`}
         >
           {[
             { text: "About", link: "/about" },
             { text: "Locations", link: "/map" },
+            { text: "Sponsors", link: "/sponsors" },
           ].map((button, index) => (
             <Link key={index} href={button.link}>
               <p className="px-3 py-2 border-white hover:text-green-600 font-serif text-2xl font-semibold">
@@ -43,6 +44,7 @@ const MenuBar = () => {
           {[
             { text: "About", link: "/about" },
             { text: "Locations", link: "/map" },
+            { text: "Sponsors", link: "/sponsors" },
           ].map((button, index) => (
             <Link key={index} href={button.link}>
               <p className="px-3 py-2 border-white hover:text-green-600 font-serif text-2xl font-semibold">

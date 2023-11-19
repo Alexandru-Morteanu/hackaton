@@ -50,7 +50,7 @@ const Home: React.FC = () => {
         </p>
         <button
           onClick={() => handleScrollToNextSection("section1")}
-          className="px-6 py-3 text-lg font-bold mt-4 bg-green-500 text-gray-900"
+          className="px-6 py-3 text-lg font-bold mt-4  text-green-600"
         >
           Learn More
         </button>
@@ -119,7 +119,7 @@ const Home: React.FC = () => {
         ref={sectionRefs.section4}
         onClick={() => handleScrollToNextSection("section4")}
       >
-        <div className="opacity-100 transition-opacity transform translate-y-8 bg-black p-4 rounded-2xl mx-4 text-center">
+        <div className="opacity-100 transition-opacity transform translate-y-8 bg-black bg-opacity-70 p-4 rounded-2xl mx-4 text-center">
           <div className="font-bold text-green-100 text-6xl">
             So what are you waiting for?
           </div>

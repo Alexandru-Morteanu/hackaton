@@ -82,7 +82,7 @@ export default function Terms() {
         </h2>
         <p className="mb-4">
           For any questions, please contact us at{" "}
-          <span className="underline text-green-300">contact@pinbin.com</span>.
+          <span className="underline text-green-300">contact@inorog.org</span>.
         </p>
       </div>
     </div>

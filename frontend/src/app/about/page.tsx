@@ -82,7 +82,7 @@ export default function Map() {
       <p className="mb-4 text-gray-300">
         For any questions, suggestions, or if you would like to partner with us,
         please contact us at{" "}
-        <span className="underline text-green-200">contact@pinbin.com</span>.
+        <span className="underline text-green-200">contact@inorog.org</span>.
       </p>
     </div>
   );
