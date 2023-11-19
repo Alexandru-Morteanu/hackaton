@@ -30,38 +30,81 @@ const Carousel: React.FC = () => {
         <div className="carousel-item">
           <div style={{ color: "white", flexDirection: "column" }}>
             {/* <Image src={Inorog} alt="" /> */}
-            <div className="text-white items-center font-bold text-3xl p-4">
+            <div className="text-white items-center font-bold text-1xl p-4">
               Inorog
             </div>
-            <div className="mb-4 text-gray-300">
+            <div className="mb-4 text-gray-10">
               Într-o lume în care miraculosul a rămas prins doar în cărțile de
               poveşti, echipa noastră îşi propune să demonstreze că, doar atunci
-              când crezi în propria magie, poți înfăptui lucruri mărețe. Inorog
-              este o echipă de robotică, ai cărei membri – mentori, profesori şi
-              elevi ai Colegiului Național „Gh. R. Codreanu” din Bârlad – au în
-              comun ambiția nemăsurată, pornind în aventura cunoaşterii acestui
-              vast domeniu. Cu toții am răspuns afirmativ provocării lansate de
-              BRD First Tech Challenge Romania, organizat de Asociația Nație
-              Prin Educație, aceea de a forma o echipa unită, funcțională,
-              fondată pe încredere, corectitudine şi cooperare, cu scopul final
-              – de a construi roboți.
+              când crezi în propria magie, poți înfăptui lucruri mărețe.
             </div>
           </div>
         </div>
         <div className="carousel-item">
-          <div style={{ background: "white" }}></div>
+          <div style={{ color: "white", flexDirection: "column" }}>
+            {/* <Image src={Inorog} alt="" /> */}
+            <div className="text-white items-center font-bold text-1xl p-4">
+              FluxInternet
+            </div>
+            <div className="mb-4 text-gray-10">
+              Locul 1 in Top Afaceri Romania, localitatea BARLAD, domeniul 62:
+              Activitati de servicii in tehnologia informatiei
+            </div>
+          </div>
         </div>
         <div className="carousel-item">
-          <div style={{ background: "white" }}></div>
+          <div style={{ color: "white", flexDirection: "column" }}>
+            {/* <Image src={Inorog} alt="" /> */}
+            <div className="text-white items-center font-bold text-1xl p-4">
+              MedFarm
+            </div>
+            <div className="mb-4 text-gray-10">
+              Locul 1 in Top Afaceri Romania Microintreprinderi, judetul VASLUI,
+              domeniul 4773: Comert cu amanuntul al produselor farmaceutice, in
+              magazine specializate
+            </div>
+          </div>
         </div>
         <div className="carousel-item">
-          <div style={{ background: "white" }}></div>
+          <div style={{ color: "white", flexDirection: "column" }}>
+            {/* <Image src={Inorog} alt="" /> */}
+            <div className="text-white items-center font-bold text-1xl p-4">
+              InfoTrust
+            </div>
+            <div className="mb-4 text-gray-10">
+              We specialize in online measurement architecture for multi-brand
+              companies, breaking down silos and validating data to ensure
+              organizations can make confident marketing decisions.
+            </div>
+          </div>
         </div>
         <div className="carousel-item">
-          <div style={{ background: "white" }}></div>
+          <div style={{ color: "white", flexDirection: "column" }}>
+            {/* <Image src={Inorog} alt="" /> */}
+            <div className="text-white items-center font-bold text-1xl p-4">
+              SorTech
+            </div>
+            <div className="mb-4 text-gray-10">
+              Sortech Auto Parts LLC is a leading provider of spare parts for
+              luxury brand vehicles with operations in North America and China.
+              With more than 20 years of industry experiences, Founder & CEO of
+              Sortech is proud to introduce to you the SORTECH brand.
+            </div>
+          </div>
         </div>
         <div className="carousel-item">
-          <div style={{ background: "white" }}></div>
+          <div style={{ color: "white", flexDirection: "column" }}>
+            {/* <Image src={Inorog} alt="" /> */}
+            <div className="text-white items-center font-bold text-1xl p-4">
+              Nomis 2003
+            </div>
+            <div className="mb-4 text-gray-10">
+              Inalta calificare, experienta angajatilor precum si echipamentele
+              performante specifice lucrarilor de constructii – montaj au permis
+              abordarea unei game largi de lucrari realizate in conditii de
+              calitate deosebite.
+            </div>
+          </div>
         </div>
         {/* Add more items as needed */}
       </div>

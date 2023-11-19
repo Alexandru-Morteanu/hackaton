@@ -31,31 +31,46 @@ export default function Camera({ switchState }: CameraProps) {
     const res = await axiosInstance.post("/", {
       buffer: Array.from(uint8Array) as number[],
     });
+    console.log(res.data);
+    // const res = {
+    //   data: "True",
+    // };
     if (res.data === "True") {
-      console.log("TRUUUUU");
       switchState(STATES.MAP);
     }
-    console.log(res.data);
+    console.log(res);
   }
 
   return (
-    <div className="flex flex-col items-center justify-center bg-black rounded-lg">
-      <Webcam
-        audio={false}
-        ref={webcamRef}
-        screenshotFormat="image/jpeg"
-        className="rounded-tl-lg rounded-tr-lg"
-      />
-      <button
-        onClick={capture}
-        className="m-2 bg-red-600 focus:bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-      >
-        Capture Photo
-      </button>
+    <div className=" flex sm:flex-row flex-col items-center justify-center bg-black rounded-lg">
+      <div className="flex flex-col sm:border-r-[4px] sm:border-r-black">
+        <Webcam
+          audio={false}
+          ref={webcamRef}
+          screenshotFormat="image/jpeg"
+          className="rounded-tl-lg rounded-tr-lg"
+        />
+        <button
+          onClick={capture}
+          className="m-2 bg-red-600 focus:bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Capture Photo
+        </button>
+      </div>
       {image && (
-        <div className="mt-4">
-          <img src={image} alt="Captured" className="rounded-lg" />
-        </div>
+        <>
+          <p>{"=>"}</p>
+          <div className="sm:border-l-[4px] sm:border-l-black  flex flex-col">
+            <img
+              src={image}
+              alt="Captured"
+              className="rounded-tl-lg rounded-tr-lg"
+            />
+            <button className="m-2 bg-red-600 focus:bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              Preview Photo
+            </button>
+          </div>
+        </>
       )}
     </div>
   );
